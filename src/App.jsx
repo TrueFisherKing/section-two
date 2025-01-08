@@ -25,8 +25,21 @@ function App() {
     return (
       <Entry
         key={entry.id}
-        // {...entry}
         entry={entry}
+        // {...entry}
+        // In Entry.jsx - will need to change to:
+        // <div className="info-container">
+        //     <img 
+        //         className="marker"
+        //         src={markerImage} 
+        //         alt="map marker icon"
+        //     />
+        //     <span className="country">{props.country}</span>
+        //     <a href={props.googleMapsLink}> View on Google Maps</a>
+        //     <h2 className="entry-title">{props.title}</h2>
+        //     <p className="trip-dates">{props.date}</p>
+        //     <p className="entry-text">{props.text}</p>
+        // </div>
       />
     )
   })
